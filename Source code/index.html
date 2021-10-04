@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="shahed portfolio" />
+    <meta name="keywords" content="HTML, CSS, JavaScript, portfolio " />
+    <meta name="author" content="shahed khalailah" />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="normalize.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ephesis&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="header-navbar">
+        <div class="logo-section">
+          <a href="#"
+            ><img class="logo" src="/Source code/images/logo.jfif" alt="logo"
+          /></a>
+        </div>
+        <div>
+          <img
+            class="burger-menu"
+            onclick="toggle()"
+            src="/Source code/images/list.svg"
+            alt="burger-menu"
+          />
+        </div>
+        <div class="navbar-list-container">
+          <ul class="navbar-list" id="navbar-list">
+            <li class="navbar-item">
+              <a href="#" class="navbar-links">Home</a>
+            </li>
+            <li class="navbar-item">
+              <a href="#about" class="navbar-links">About</a>
+            </li>
+            <li class="navbar-item">
+              <a href="#skills" class="navbar-links">Skills</a>
+            </li>
+            <li class="navbar-item">
+              <a href="#projects" class="navbar-links">Projects</a>
+            </li>
+            <li class="navbar-item">
+              <a href="#contact" class="navbar-links">Contact Me</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="hero">
+        <div data-aos="fade-up-left">
+          <h1 class="hero-title" data-aos="fade-up-left">
+            Hi, I'm Shahed Alkhalailah
+          </h1>
+          <div class="hero-hr"></div>
+          <div class="hero-paragraph-title" data-aos="flip-left">
+            Full Stack Developer
+          </div>
+          <p class="hero-paragraph">
+            High level experience in web design and development<br />
+            knowledge, producing quality work.
+          </p>
+          <button class="hero-button">Contact Me</button>
+        </div>
+      </section>
+
+      <section class="about" id="about">
+        <h2 class="section-title"><span>About Me</span></h2>
+        <h3 class="about-me" data-aos="flip-right">
+          Who <span class="about-I">I</span> am
+        </h3>
+        <p class="about-container" data-aos="flip-down">
+          I'm Full Stack Developer <br />
+          I enjoy taking complex problems and turning them into simple and
+          beautiful interface designs, I also love the logic and structure of
+          coding and always strive to write elegant and efficient code . Whether
+          it be HTML ,CSS and javascript
+        </p>
+      </section>
+
+      <section class="skills-container" id="skills">
+        <h2 class="section-title"><span>My Skills</span></h2>
+        <div class="skills">
+          <div class="skills-list" data-aos="slide-up">
+            <h3 class="skills-list__title">My Expertise</h3>
+            <div class="skills-list__skill">
+              <div>HTML</div>
+              <div class="eighty-percent"></div>
+            </div>
+            <div class="skills-list__skill">
+              <div>CSS</div>
+              <div class="sixty-percent"></div>
+            </div>
+            <div class="skills-list__skill">
+              <div>javascript</div>
+              <div class="seventy-percent"></div>
+
+              <div class="skills-list__skill">
+                <div>Bootstrap</div>
+                <div class="seventy-five-percent"></div>
+              </div>
+            </div>
+          </div>
+          <div class="skills-image-container">
+            <img
+              class="skills-image"
+              src="/Source code/images/skills.webp"
+              alt="skills"
+              data-aos="slide-up"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="project-container" id="projects">
+        <h2 class="section-title"><span>My Projects</span></h2>
+        <div class="projects">
+          <div class="project-left">
+            <img
+              class="project-image"
+              src="/Source code/images/my-project.webp"
+              alt="project1"
+              data-aos="zoom-in-down"
+            />
+          </div>
+          <div class="project-right">
+            <h3 class="projecy-title">Travel& Shopping</h3>
+            <img
+              class="project-image"
+              src="/Source code/images/project.webp"
+              alt="project2"
+              data-aos="zoom-out-down"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="testimonial-container">
+        <h2 class="section-title"><span>Testimonials</span></h2>
+        <div class="testimonial">
+          <img
+            class="testimonial-img"
+            src="/Source code/images/hanen.webp"
+            alt="apicture-of-woman"
+          />
+
+          <p class="testimonial-name" data-aos="fade-down-right">
+            Haneen al sharabaty
+          </p>
+          <p class="testimonial-paragraph" data-aos="fade-down-right">
+            Was looking for a clean , responsive theme to showcase several
+            <br />
+            photos/posts. Travel & shopping theme was a perfect fit and has
+            <br />been easy to maintain. Thanks to Shahed , my website look
+            perfect <br />now! All my readers are completely thrilled by the new
+            design. <br />
+            Woohooo!!
+          </p>
+        </div>
+      </section>
+      <section class="contact-container" id="contact">
+        <h2 class="section-title"><span>Contact Me</span></h2>
+        <div class="all">
+          <div class="form" data-aos="slide-up">
+            <div class="contact-info">
+              <h3 class="info-title">Get in Touch</h3>
+              <p class="info-text">
+                Feel free to get in touch whith me. I'm always open ro
+                discussing new projects, creative ideas or opportunities to be
+                part of your visions.
+              </p>
+
+              <div class="info">
+                <div class="information">
+                  <img
+                    src="/Source code/images/location.svg"
+                    alt="location"
+                    class="icon"
+                  />
+                  <p>Jordan-Amman</p>
+                </div>
+                <div class="information">
+                  <img
+                    src="/Source code/images/envelope.svg"
+                    alt="email"
+                    class="icon"
+                  />
+                  <p>alkhalailah.shahed@gmail.com</p>
+                </div>
+                <div class="information">
+                  <img
+                    src="/Source code/images/phone-call.svg"
+                    alt="phone"
+                    class="icon"
+                  />
+                  <p>+962 7 7767 5839</p>
+                </div>
+              </div>
+            </div>
+            <div class="contact-form">
+              <span class="circle one"></span>
+              <span class="circle tow"></span>
+              <form>
+                <h3 class="form-titile">Contact Me</h3>
+                <div class="input-container">
+                  <input
+                    type="text"
+                    name="name"
+                    class="input"
+                    placeholder="username"
+                  />
+                </div>
+
+                <div class="input-container">
+                  <input
+                    type="email"
+                    name="email"
+                    class="input"
+                    placeholder="Email"
+                  />
+                </div>
+
+                <div class="input-container">
+                  <input
+                    type="text"
+                    name="phone"
+                    class="input"
+                    placeholder="Phone"
+                  />
+                </div>
+
+                <div class="input-container textarea">
+                  <textarea
+                    name="massage"
+                    class="input"
+                    placeholder="massage"
+                  ></textarea>
+                </div>
+                <input type="submit" value="Send" class="contact-btn" />
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer-container">
+      <div>
+        <p class="follow">Follow Me On</p>
+        <div class="footer-icons">
+          <img
+            src="/Source code/images/facebook-logo.svg "
+            alt="facebook"
+            class="icons"
+          />
+          <img
+            src="/Source code/images/instagram.svg"
+            alt="instagram"
+            class="icons"
+          />
+          <img
+            src="/Source code/images/snapchat.svg"
+            alt="snapchat"
+            class="icons"
+          />
+          <img
+            src="/Source code/images/twitter.svg"
+            alt="twitter"
+            class="icons"
+          />
+        </div>
+      </div>
+    </footer>
+    <script src="/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
